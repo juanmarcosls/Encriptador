@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+  <div class="encriptar">
     <h1 class="titulo">CÓDIGO SECRETO</h1>
     <main class="main">
     <section class="form box">
       <form action="">
         <label for="input-texto">Solo letras minúsculas, sin acento</label>
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122)|| (event.charCode == 32) || event.charCode == 241 || event.charCode == 44 )">
-        <button class="btn" type="submit" value="encriptar!" id="btn-encriptar">encriptar</button>
-        <button class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">desencriptar</button>
+        <button class="btn" type="submit" value="encriptar!" id="btn-encriptar">Encriptar</button>
+        <button class="btn" type="submit" value="desencriptar!" id="btn-desencriptar">Desencriptar</button>
       </form>
     </section>
-  
+  </div>
+  <div class="msmEncriptado">
     <section class="msg box">
       <h2 id="">Mensaje encriptado:</h2>
       <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy" data-clipboard-target="#msg">
+      <input class="btn" type="submit" value="Copiar" id="btn-copy" data-clipboard-target="#msg">
     </section>
+  </div>
   </main>
 
     <script src= "js/copiar.js"></script>

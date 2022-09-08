@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
-  body {
-    height: 600px;
-    background-image: url(../img/fondo.jpg);
+  body{
+    margin: 0;
+    padding: 0;
+    height: 44vw;
+    background: url(img.jpg);   
     background-size: cover;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+    background-position: center;
+    font-family: sans-serif;
+}
   
   .main {
     width: 80vw;
@@ -21,13 +25,17 @@
   
   .titulo {
     padding: 15px;
+    padding-left: 7vw;
     width: 30vw;
     margin: auto;
     margin-top: 100px;
+    background-color: rgba(40, 147, 241, 0.712);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3em;
   }
   
   .box {
-    padding: 10px;
+    padding: 15px;
     margin: 0 10px 0 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -41,7 +49,7 @@
     color: white;
     font-weight: bold;
     background-color: blue;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
     border-radius: 0.5em;
   }
@@ -53,4 +61,10 @@
     padding: 0.5em;
     width: 100%;
     height: 50px;
+  }
+  
+
+  .msmEncriptado{
+    margin: 3vw 0vw 0vw 34vw;
+
   }
